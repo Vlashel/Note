@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TitlesActivity" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_exit"
+        android:title="@string/action_exit"
+        android:orderInCategory="102"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_new"
+        android:title="@string/add_note"
+        android:orderInCategory="103"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/action_delete"
+        android:title="Delete"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_action_delete"
+        android:showAsAction="ifRoom|withText" />
+</menu>
