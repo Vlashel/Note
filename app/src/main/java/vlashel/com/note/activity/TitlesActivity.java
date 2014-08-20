@@ -66,7 +66,7 @@ public class TitlesActivity extends Activity  {
         TitlesFragment titlesFragment = (TitlesFragment) getFragmentManager().findFragmentById(R.id.titles);
         int id =  titlesFragment.getNoteId();
         noteHelper.deleteNote(id);
-        titlesFragment.onResume();
+        titlesFragment.initAdapter();
     }
 
 }

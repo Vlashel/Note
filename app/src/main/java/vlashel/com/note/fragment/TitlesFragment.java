@@ -52,6 +52,20 @@ public class TitlesFragment extends ListFragment {
     public void onResume() {
         super.onResume();
 
+
+        initAdapter();
+
+       /* NoteHelper noteHelper = new NoteHelper(getActivity());
+
+        notes = noteHelper.getAllNotes();
+
+        setNotes(notes);
+
+        adapter.notifyDataSetChanged();*/
+
+    }
+
+    public void initAdapter() {
         NoteHelper noteHelper = new NoteHelper(getActivity());
 
         notes = noteHelper.getAllNotes();
@@ -62,16 +76,6 @@ public class TitlesFragment extends ListFragment {
         );
 
         setListAdapter(adapter);
-
-
-       /* NoteHelper noteHelper = new NoteHelper(getActivity());
-
-        notes = noteHelper.getAllNotes();
-
-        setNotes(notes);
-
-        adapter.notifyDataSetChanged();*/
-
     }
 
     @Override
